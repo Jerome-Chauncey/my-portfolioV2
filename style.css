@@ -1,222 +1,220 @@
-
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Space Mono', sans-serif;
-    width: 100%;
-    box-sizing: border-box;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 20px;
 }
-
 
 .topnav {
-    background-color: purple;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
+  background-color: purple;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
 .topnav a {
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 10px;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
 }
 .topnav a:hover {
-    background-color: lightgreen;
-    color: black;
+  background-color: lightgreen;
+  color: black;
 }
 .topnav a.split {
-    background-color: orange;
-    color: white;
+  background-color: orange;
+  color: white;
 }
 
-
 .header {
-    text-align: center;
-    padding: 50px;
-    background-image: url(./photos/abstract-dark-red-4k-37.jpg);
-    background-size: cover;
-    color: orange;
+  text-align: center;
+  padding: 50px;
+  background-image: url(./photos/abstract-dark-red-4k-37.jpg);
+  background-size: cover;
+  color: orange;
 }
 
 /* Container for content */
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
 }
 
 /* About Section */
 .about {
-    text-align: center;
-    max-width: 800px;
+  text-align: center;
+  max-width: 800px;
 }
 .profile img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 20%;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20%;
 }
 
-.row{
-    background-image: url(./photos/wallpaperflare.com_wallpaper-min.jpg);
-    background-size: cover;
-    color: whitesmoke;
+.row {
+  background-image: url(./photos/wallpaperflare.com_wallpaper-min.jpg);
+  background-size: cover;
+  color: whitesmoke;
 }
-
 
 .footer {
-    text-align: center;
-    padding: 20px;
-    background-color: purple;
-    
+  text-align: center;
+  padding: 20px;
+  background-color: purple;
 }
 .footer .fa {
-    font-size: 30px;
-    margin: 0 10px;
-    text-decoration: none;
+  font-size: 30px;
+  margin: 0 10px;
+  text-decoration: none;
 }
 .footer .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
-p > a{
-    text-decoration: none;
-    font-size: 30px;
-    color: orange;
+p > a {
+  text-decoration: none;
+  font-size: 30px;
+  color: orange;
 }
 
-p > a:hover{
-    opacity: 0.7;
+p > a:hover {
+  opacity: 0.7;
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 375px) {
-    .topnav {
-        flex-direction: column;
-        align-items: center;
-    }
-    .topnav a {
-        padding: 8px;
-        font-size: 18px;
-    }
-    .header {
-        font-size: 24px;
-        padding: 30px;
-    }
-    .profile img {
-        max-width: 200px;
-    }
+  .topnav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .topnav a {
+    padding: 8px;
+    font-size: 18px;
+  }
+  .header {
+    font-size: 24px;
+    padding: 30px;
+  }
+  .profile img {
+    max-width: 200px;
+  }
 }
 
-.fa-instagram{
-    color: #E1306C;
+.fa-instagram {
+  color: #e1306c;
 }
 
-.fa-linkedin{
-    color: rgb(10, 102, 194);
+.fa-linkedin {
+  color: rgb(10, 102, 194);
 }
 
-.fa-github{
-    color: #181717;
+.fa-github {
+  color: #181717;
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
 
- .slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-  }
-  
-  
-  .mySlides {
-    display: none;
-  }
-  
-  
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
+.about {
+  margin: auto;
+}
 
-  .prev{
-    left: 1%;
-    font-size: 18px;
-  }
-  
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  
-  .prev:hover, .next:hover {
-    background-color: orange;
-  }
-  
-  
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: orange;
-  }
-  
-  Fading animation
-  .fade {
-    animation-name: fade;
-    animation-duration: 0.6s;
-  } 
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+.mySlides {
+  display: none;
+  text-align: center;
+}
 
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
+.prev {
+  left: 1%;
+  font-size: 18px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: orange;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: orange;
+}
+
+Fading animation .fade {
+  animation-name: fade;
+  animation-duration: 0.6s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
